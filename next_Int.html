@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return the Next Number from the Integer</title>
+</head>
+<body>
+    <h2>Return the Next Number from the Integer</h2>
+    <input type="number" id="num" placeholder="Input value">
+    <br>
+    <button type="button" onclick="incrementByOne();">
+        Next Number
+    </button>
+    <p id="numberPlus1"></p>
+    <script>
+        //Create a script that let num as a variable for the input of a numeric values and display the increment by 1
+          function  incrementByOne(){
+            let num = document.getElementById(`num`).value;
+            let numberPlus1 = ++num;
+            console.log(numberPlus1);
+
+            document.getElementById(`numberPlus1`).innerHTML = numberPlus1;
+        }
+    </script>
+    
+</body>
+</html>
