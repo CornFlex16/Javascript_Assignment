@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Minutes into Seconds</title>
+</head>
+<body>
+    <h2>Convert Minutes into Seconds</h2>
+    <input type="number" id="minutes" placeholder="input minutes" style="width: 300px;"><br>
+    <button type="button" onclick="convert();" style="margin-top: 5px; width: 300px;">
+        Convert Minutes to Seconds
+    </button>
+    <p><span id="totalSec"></span></p>
+
+    <script>
+        function convert(){
+           var minutes = document.getElementById(`minutes`).value;
+           var minToSec = minutes * 60;
+
+           var totalSec = minToSec;
+           console.log(totalSec);
+        
+           document.getElementById(`totalSec`).innerHTML = totalSec + "Seconds";
+        }
+</script>
+
+    
+</body>
+</html>
