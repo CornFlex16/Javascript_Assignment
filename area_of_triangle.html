@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of a Triangle</title>
+</head>
+<body>
+    
+    <h2>Area of a Triangle</h2>
+    
+    <p>base: <input type="number" id="base"></p>
+    <p>height: <input type="number" id="height"></p>
+
+    <button type="button" onclick="calculate();">
+        Calculate Area
+    </button>
+    <p>Area: <strong><span id="area"></span></strong></p>
+    
+
+    <script>
+        //Write a script to let base and height as the variables of a triangle and display its area.
+    function calculate() {
+         var base = document.getElementById(`base`).value;
+         var height = document.getElementById(`height`).value;
+
+         let area = base * height / 2;
+
+         console.log(area);
+         document.getElementById('area').innerHTML = (area + " sq.Units");
+        }
+    </script>
+    
+</body>
+</html>
