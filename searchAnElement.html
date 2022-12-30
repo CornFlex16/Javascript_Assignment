@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding an element in an Array</title>
+</head>
+<body>
+    <h2>Finding an element in an Array </h2> 
+    <p>Write script that will facilitate an array of [“PHP”, “CSS”, “Javascript”, “Hello”, “Laravel”, “Node”]  
+    and let X a String variable as an input to navigate the array or search if it is found inside as an element. 
+    Display a boolean true, if found else boolean false.</p>
+    <p>Examples</p>
+    <p>Let X = “C++”  ➞ false</p>
+    <p>Let X = “Hello”  ➞ true</p> 
+
+    <script>
+        let array = ["PHP","CSS","Javascript","Hello","Laravel","Node"]
+        let x = "PHP";
+        let y = "joker";
+
+        console.log( array.includes(x)); //True
+        console.log( array.includes(y)); //False
+    </script>
+
+
+
+    
+</body>
+</html>
